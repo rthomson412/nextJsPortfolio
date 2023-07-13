@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;500;600;700;800;900&display=swap');
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Neuton', sans-serif;
 }
 
 @layer base {
+
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#19181a] text-[#ffffff] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -20,7 +21,7 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Neuton]
   }
 
   h2 {
@@ -32,6 +33,56 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply shadow-sm shadow-orange-200 rounded-xl bg-gradient-to-r from-[#d8c3a5] to-[#8e8d8a] text-white
+  }
+  #home {
+    background-image: url("../public/assets/apps.webp");
+    background-position:center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    /* padding: 10%; */
+    opacity: 90%;
+  }
+  #about {
+    background-image: url("../public/assets/hero.webp");
+    background-position:center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    /* padding: 10%; */
+    opacity: 90%;
+  }
+  #skills {
+    background-image: url("../public/assets/tech.webp");
+    background-position:center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    /* padding: 10%; */
+    opacity: 90%;
+  }
+  #projects {
+    background-image: url("../public/assets/apps.webp");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    /* padding: 10%; */
+    opacity: 90%;
+  }
+  #contact {
+    background-image: url("../public/assets/hero.webp");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    /* padding: 10%; */
+    opacity: 90%;
   }
 }
